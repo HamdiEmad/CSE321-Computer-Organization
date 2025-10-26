@@ -43,7 +43,10 @@ main:
     add     $t5,    $t1,            $t2
     add     $t5,    $t5,            $t3
     add     $t5,    $t5,            $t4
-    div     $t6,    $t5,            4
+    li      $t9,    4
+    div     $t5,    $t9
+    mflo    $t6
+
 
     # Print average
     li      $v0,    4
